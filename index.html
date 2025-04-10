@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Code Editor - HTML, CSS, JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mini Code Editor</h1>
+    <p>Write HTML, CSS, and JavaScript and see the live output below!</p>
+  </header>
+
+  <main class="editor-container">
+    <section class="editor">
+      <h3>HTML</h3>
+      <textarea id="html-code" placeholder="&lt;!-- Write HTML here --&gt;"></textarea>
+    </section>
+
+    <section class="editor">
+      <h3>CSS</h3>
+      <textarea id="css-code" placeholder="/* Write CSS here */"></textarea>
+    </section>
+
+    <section class="editor">
+      <h3>JavaScript</h3>
+      <textarea id="js-code" placeholder="// Write JavaScript here"></textarea>
+    </section>
+  </main>
+
+  <button onclick="run()">▶ Run Code</button>
+
+  <section class="output-section">
+    <h2>Live Output</h2>
+    <iframe id="output"></iframe>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
